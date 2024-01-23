@@ -10,4 +10,4 @@ git config --global --add safe.directory /github/workspace
 git config --global credential.'https://git-codecommit.*.amazonaws.com.cn'.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath false
 git remote add sync ${CodeCommitUrl}
-git push sync --mirror
+git push -f sync
